@@ -19,5 +19,8 @@
   "homepage": "https://github.com/shinosakarb/graphql-tutorial#readme",
   "dependencies": {
     "graphql-yoga": "^1.16.1"
+  },
+  "devDependencies": {
+    "prisma": "^1.14.2"
   }
 }
