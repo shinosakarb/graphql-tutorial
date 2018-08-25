@@ -1,2 +1,7 @@
 endpoint: http://localhost:4466
 datamodel: datamodel.graphql
+secret: 'hoge'
+
+hooks:
+  post-deploy:
+    - npx graphql get-schema --project database
