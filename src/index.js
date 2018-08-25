@@ -41,7 +41,7 @@ const server = new GraphQLServer({
   context: req => ({
     ...req,
     db: new Prisma({
-      typeDefs: './database/datamodel.graphql',
+      typeDefs: 'src/generated/prisma.graphql',
       endpoint: 'http://localhost:4466',
       secret: 'hoge',
       debug: true,
