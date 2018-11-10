@@ -4,7 +4,10 @@
   "description": "ktkr",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "npm-run-all --parallel start playground",
+    "playground": "graphql playground",
+    "prisma": "prisma"
   },
   "repository": {
     "type": "git",
@@ -18,11 +21,12 @@
   },
   "homepage": "https://github.com/shinosakarb/graphql-tutorial#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "graphql-yoga": "^1.16.1",
     "prisma-binding": "^2.1.4"
   },
   "devDependencies": {
     "graphql-cli": "^2.16.5",
     "prisma": "^1.14.2"
-}
+  }
 }
